@@ -10,8 +10,10 @@ import SwiftUI
 struct DictionaryView: View {
   @ObservedObject var viewModel = DictionaryViewModel()
   var body: some View {
-
+    
     ZStack(alignment: .bottom) {
+      Color.white.edgesIgnoringSafeArea(.all)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
       VStack {
         HStack {
           TextField("", text: $viewModel.searchText)
@@ -24,11 +26,13 @@ struct DictionaryView: View {
             Image("search")
               .resizable()
               .frame(width: 24, height: 24)
+              .padding(.trailing, 16)
           }
         }.overlay(
           RoundedRectangle(cornerRadius: 12)
             .stroke(Color.incGray, lineWidth: 1)
-        )
+        ).padding(.horizontal, 16)
+        
         if viewModel.showEmptyPlaceholder {
           VStack {
             Spacer()
@@ -47,6 +51,7 @@ struct DictionaryView: View {
               .padding(.horizontal, 17)
             Spacer()
           }
+        } else {
           
           ScrollView(.vertical) {
             ForEach(viewModel.words, id: \.id) { word in
@@ -54,22 +59,24 @@ struct DictionaryView: View {
                 viewModel.playPhonetic(with: word.phonetics.first?.audio ?? "")
               })
             }
-          }
+          }.padding(.horizontal, 16)
         }
       }
-      Button {
-        viewModel.addToDictionary()
-      } label: {
-        Text("Add to Dictionary")
-          .foregroundColor(.white)
-          .font(.medium(16))
-          .padding(.vertical, 16)
-          .padding(.horizontal, 32)
-          .frame(maxWidth: .infinity)
-          .background(Color.accent)
-          .cornerRadius(16)
-      }.padding(.horizontal, 33)
-        .frame(maxHeight: 56)
+      if !viewModel.showEmptyPlaceholder {
+        Button {
+          viewModel.addToDictionary()
+        } label: {
+          Text("Add to Dictionary")
+            .foregroundColor(.white)
+            .font(.medium(16))
+            .padding(.vertical, 16)
+            .padding(.horizontal, 32)
+            .frame(maxWidth: .infinity)
+            .background(Color.accent)
+            .cornerRadius(16)
+        }.padding(.horizontal, 33)
+          .frame(maxHeight: 56)
+      }
     }
   }
 }
@@ -102,11 +109,12 @@ struct WordView: View {
           .foregroundColor(.accent)
           .font(.regular(14))
       }
-      VStack(spacing: 10) {
+      VStack(alignment: .leading, spacing: 10) {
         ForEach(word.meanings, id: \.id) { meaning in
           ForEach(meaning.definitions, id: \.id) { definition in
-            VStack(spacing: 8) {
+            VStack(alignment: .leading, spacing: 8) {
               Text(definition.definition ?? "")
+                .multilineTextAlignment(.leading)
                 .foregroundColor(.black)
                 .font(.regular(14))
               HStack(spacing: 0) {
@@ -114,15 +122,16 @@ struct WordView: View {
                   .foregroundColor(.lightBlue)
                   .font(.regular(14))
                 Text(definition.example ?? "")
-                  .foregroundColor(.accent)
+                  .foregroundColor(.black)
                   .font(.regular(14))
+                  .multilineTextAlignment(.leading)
               }
             }.padding(16)
+              .frame(maxWidth: .infinity)
               .overlay(
                 RoundedRectangle(cornerRadius: 16)
                   .stroke(Color.incGray, lineWidth: 1)
               )
-              .padding(.horizontal, 16)
           }
         }
       }

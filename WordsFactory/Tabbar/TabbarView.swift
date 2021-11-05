@@ -14,14 +14,14 @@ struct TabbarView: View {
     ZStack(alignment: .bottom) {
       Color.white.edgesIgnoringSafeArea(.all)
       VStack {
-      switch viewModel.currentTab {
-      case .dictionary:
-        DictionaryView()
-      case .training:
-        EmptyView()
-      case .video:
-        VideoView()
-      }
+        switch viewModel.currentTab {
+        case .dictionary:
+          DictionaryView()
+        case .training:
+          EmptyView()
+        case .video:
+          VideoView()
+        }
       }.padding(.bottom, 100)
       HStack(spacing: 65) {
         ForEach(Tabs.allCases, id: \.self) { tab in
@@ -35,7 +35,13 @@ struct TabbarView: View {
             }
         }
       }.padding(.top, 12)
-        .padding(.horizontal, 25)
+        .padding([.horizontal, .bottom], 25)
+        .frame(maxWidth: .infinity)
+        .overlay(
+          Rounded()
+            .stroke(Color.incGray, lineWidth: 1)
+        )
     }.navigationBarHidden(true)
+      .edgesIgnoringSafeArea(.bottom)
   }
 }

@@ -9,6 +9,17 @@ import SwiftUI
 
 enum Tabs: String, CaseIterable {
   case dictionary, training, video
+  
+  var title: String {
+    switch self {
+    case .dictionary:
+      return "Dictionary"
+    case .training:
+      return "Training"
+    case .video:
+      return "Video"
+    }
+  }
 }
 
 class TabbarViewModel: ObservableObject {

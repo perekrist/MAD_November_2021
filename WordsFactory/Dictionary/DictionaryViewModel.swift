@@ -6,15 +6,20 @@
 //
 
 import SwiftUI
+import AVKit
 
 class DictionaryViewModel: ObservableObject {
   @Published var searchText: String = "rude" {
     didSet {
-      showEmptyPlaceholder = searchText.isEmpty
+      showEmptyPlaceholder = searchText.isEmpty || words.isEmpty
     }
   }
-  @Published var showEmptyPlaceholder: Bool = false
-  @Published var words: [Word] = []
+  @Published var showEmptyPlaceholder: Bool = true
+  @Published var words: [Word] = [] {
+    didSet {
+      showEmptyPlaceholder = searchText.isEmpty || words.isEmpty
+    }
+  }
   
   private let networkService = NetworkService()
   
@@ -25,7 +30,10 @@ class DictionaryViewModel: ObservableObject {
   }
   
   func playPhonetic(with url: String) {
-    
+    guard let url = URL(string: "https:" + url) else { return }
+    let item = AVPlayerItem(url: url)
+    let player = AVPlayer(playerItem: item)
+    player.play()
   }
   
   func addToDictionary() {

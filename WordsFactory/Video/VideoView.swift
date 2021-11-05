@@ -19,7 +19,7 @@ struct VideoView: UIViewRepresentable {
   }
   
   func updateUIView(_ uiView: WKWebView, context: Context) {
-    uiView.loadHTMLString("", baseURL: URL(string: viewModel.request))
-    //    uiView.loadRequest(URL(string: request))
+    guard let url = URL(string: viewModel.request) else { return }
+    uiView.load(URLRequest(url: url))
   }
 }
