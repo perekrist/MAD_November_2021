@@ -26,6 +26,21 @@
 		CA305D55273526B70010A3AC /* DictionaryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D54273526B70010A3AC /* DictionaryResponse.swift */; };
 		CA305D582735335B0010A3AC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D572735335B0010A3AC /* VideoView.swift */; };
 		CA305D5A273535AD0010A3AC /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D59273535AD0010A3AC /* VideoViewModel.swift */; };
+		CA305D5D273554FA0010A3AC /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D5C273554FA0010A3AC /* TrainingView.swift */; };
+		CA305D5F2735550E0010A3AC /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D5E2735550E0010A3AC /* TrainingViewModel.swift */; };
+		CA305D6127355A000010A3AC /* SecondState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D6027355A000010A3AC /* SecondState.swift */; };
+		CA305D6427355A990010A3AC /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D6327355A990010A3AC /* QuestionView.swift */; };
+		CA305D6627355AAA0010A3AC /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D6527355AAA0010A3AC /* QuestionViewModel.swift */; };
+		CA305D672735673E0010A3AC /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE18D2B273513F400C967CD /* Rubik-Bold.ttf */; };
+		CA305D682735673E0010A3AC /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE18D2C273513F500C967CD /* Rubik-Medium.ttf */; };
+		CA305D692735673E0010A3AC /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE18D2A273513F400C967CD /* Rubik-Regular.ttf */; };
+		CA305D6A273567430010A3AC /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE18D2B273513F400C967CD /* Rubik-Bold.ttf */; };
+		CA305D6B273567430010A3AC /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE18D2C273513F500C967CD /* Rubik-Medium.ttf */; };
+		CA305D6C273567430010A3AC /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE18D2A273513F400C967CD /* Rubik-Regular.ttf */; };
+		CA305D6D2735674D0010A3AC /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D242734F47100C967CD /* Color+Custom.swift */; };
+		CA305D6E2735674D0010A3AC /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D242734F47100C967CD /* Color+Custom.swift */; };
+		CA305D6F273567530010A3AC /* Font+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D262734F48100C967CD /* Font+Custom.swift */; };
+		CA305D70273567530010A3AC /* Font+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D262734F48100C967CD /* Font+Custom.swift */; };
 		CAE18CAF2734EDE500C967CD /* WordsFactoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */; };
 		CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CB02734EDE500C967CD /* ContentView.swift */; };
 		CAE18CB32734EDE800C967CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18CB22734EDE800C967CD /* Assets.xcassets */; };
@@ -162,6 +177,11 @@
 		CA305D54273526B70010A3AC /* DictionaryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryResponse.swift; sourceTree = "<group>"; };
 		CA305D572735335B0010A3AC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		CA305D59273535AD0010A3AC /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		CA305D5C273554FA0010A3AC /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		CA305D5E2735550E0010A3AC /* TrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
+		CA305D6027355A000010A3AC /* SecondState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondState.swift; sourceTree = "<group>"; };
+		CA305D6327355A990010A3AC /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		CA305D6527355AAA0010A3AC /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		CAE18CAB2734EDE500C967CD /* WordsFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFactoryApp.swift; sourceTree = "<group>"; };
 		CAE18CB02734EDE500C967CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -305,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				CA305D54273526B70010A3AC /* DictionaryResponse.swift */,
+				CA305D6027355A000010A3AC /* SecondState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,6 +337,24 @@
 				CA305D59273535AD0010A3AC /* VideoViewModel.swift */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		CA305D5B273554E20010A3AC /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				CA305D5C273554FA0010A3AC /* TrainingView.swift */,
+				CA305D5E2735550E0010A3AC /* TrainingViewModel.swift */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		CA305D6227355A8C0010A3AC /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				CA305D6327355A990010A3AC /* QuestionView.swift */,
+				CA305D6527355AAA0010A3AC /* QuestionViewModel.swift */,
+			);
+			path = Question;
 			sourceTree = "<group>";
 		};
 		CAE18CA22734EDE500C967CD = {
@@ -350,6 +389,8 @@
 		CAE18CAD2734EDE500C967CD /* WordsFactory */ = {
 			isa = PBXGroup;
 			children = (
+				CA305D6227355A8C0010A3AC /* Question */,
+				CA305D5B273554E20010A3AC /* Training */,
 				CA305D56273533470010A3AC /* Video */,
 				CA305D53273526500010A3AC /* Models */,
 				CA305D4A273523A90010A3AC /* Dictionary */,
@@ -757,7 +798,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAE18CF72734EE9100C967CD /* Preview Assets.xcassets in Resources */,
+				CA305D6A273567430010A3AC /* Rubik-Bold.ttf in Resources */,
 				CAE18CF42734EE9100C967CD /* Assets.xcassets in Resources */,
+				CA305D6C273567430010A3AC /* Rubik-Regular.ttf in Resources */,
+				CA305D6B273567430010A3AC /* Rubik-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,7 +809,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA305D682735673E0010A3AC /* Rubik-Medium.ttf in Resources */,
+				CA305D692735673E0010A3AC /* Rubik-Regular.ttf in Resources */,
 				CAE18D122734EECB00C967CD /* Assets.xcassets in Resources */,
+				CA305D672735673E0010A3AC /* Rubik-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -967,6 +1014,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA305D5F2735550E0010A3AC /* TrainingViewModel.swift in Sources */,
 				CA305D50273524610010A3AC /* View+Rounded.swift in Sources */,
 				CA305D4C273523CF0010A3AC /* DictionaryView.swift in Sources */,
 				CA305D49273521600010A3AC /* TabbarViewModel.swift in Sources */,
@@ -974,7 +1022,10 @@
 				CAE18D272734F48100C967CD /* Font+Custom.swift in Sources */,
 				CA305D582735335B0010A3AC /* VideoView.swift in Sources */,
 				CAE18D312735150A00C967CD /* BannerShowingSingleton.swift in Sources */,
+				CA305D6127355A000010A3AC /* SecondState.swift in Sources */,
 				CA305D3C273517330010A3AC /* OnboardingView.swift in Sources */,
+				CA305D6627355AAA0010A3AC /* QuestionViewModel.swift in Sources */,
+				CA305D5D273554FA0010A3AC /* TrainingView.swift in Sources */,
 				CA305D4E273523DE0010A3AC /* DictionaryViewModel.swift in Sources */,
 				CA305D55273526B70010A3AC /* DictionaryResponse.swift in Sources */,
 				CA305D5A273535AD0010A3AC /* VideoViewModel.swift in Sources */,
@@ -982,6 +1033,7 @@
 				CA305D4227351A4B0010A3AC /* SignUpView.swift in Sources */,
 				CA305D52273524B50010A3AC /* NetworkService.swift in Sources */,
 				CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */,
+				CA305D6427355A990010A3AC /* QuestionView.swift in Sources */,
 				CA305D3E2735174B0010A3AC /* OnboardingViewModel.swift in Sources */,
 				CA305D472735214C0010A3AC /* TabbarView.swift in Sources */,
 				CAE18CAF2734EDE500C967CD /* WordsFactoryApp.swift in Sources */,
@@ -1011,7 +1063,9 @@
 			files = (
 				CAE18CF02734EE8F00C967CD /* WordsFactoryApp.swift in Sources */,
 				CAE18CEE2734EE8F00C967CD /* ContentView.swift in Sources */,
+				CA305D6E2735674D0010A3AC /* Color+Custom.swift in Sources */,
 				CAE18CF22734EE8F00C967CD /* ComplicationController.swift in Sources */,
+				CA305D6F273567530010A3AC /* Font+Custom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1019,6 +1073,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA305D6D2735674D0010A3AC /* Color+Custom.swift in Sources */,
+				CA305D70273567530010A3AC /* Font+Custom.swift in Sources */,
 				CAE18D102734EEC800C967CD /* WidgetWordsFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

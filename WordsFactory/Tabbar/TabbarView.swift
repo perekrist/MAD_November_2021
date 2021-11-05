@@ -18,7 +18,7 @@ struct TabbarView: View {
         case .dictionary:
           DictionaryView()
         case .training:
-          EmptyView()
+          TrainingView()
         case .video:
           VideoView()
         }
