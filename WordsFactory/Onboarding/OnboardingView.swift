@@ -17,7 +17,7 @@ struct OnboardingView: View {
         Button {
           viewModel.skip()
         } label: {
-          Text("skip")
+          Text("Skip")
             .foregroundColor(.inc)
             .font(.medium(14))
         }.padding(16)
@@ -38,7 +38,7 @@ struct OnboardingView: View {
               Text(viewModel.onboardingData[index].1)
                 .foregroundColor(.incGray)
                 .font(.regular(14))
-                .multilineTextAlignment(.center)
+                .multilineTextAlignment(.leading)
             }.padding(.top, 16)
               .padding(.horizontal, 17)
           }
@@ -61,13 +61,13 @@ struct OnboardingView: View {
       }.padding([.horizontal, .bottom], 32)
         .frame(maxHeight: 56)
     }.navigationBarHidden(true)
-    .background(
-      NavigationLink(isActive: $viewModel.goToSignUp,
-                     destination: {
-                       SignUpView()
-                     }, label: {
-                       EmptyView()
-                     }).hidden()
-    )
+      .background(
+        NavigationLink(isActive: $viewModel.goToSignUp,
+                       destination: {
+                         SignUpView()
+                       }, label: {
+                         EmptyView()
+                       }).hidden()
+      )
   }
 }

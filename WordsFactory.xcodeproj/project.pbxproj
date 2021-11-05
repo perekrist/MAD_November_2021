@@ -16,6 +16,7 @@
 		CA305D3C273517330010A3AC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D3B273517330010A3AC /* OnboardingView.swift */; };
 		CA305D3E2735174B0010A3AC /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D3D2735174B0010A3AC /* OnboardingViewModel.swift */; };
 		CA305D4227351A4B0010A3AC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D4127351A4B0010A3AC /* SignUpView.swift */; };
+		CA305D4427351D490010A3AC /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D4327351D490010A3AC /* SignUpViewModel.swift */; };
 		CAE18CAF2734EDE500C967CD /* WordsFactoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */; };
 		CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CB02734EDE500C967CD /* ContentView.swift */; };
 		CAE18CB32734EDE800C967CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18CB22734EDE800C967CD /* Assets.xcassets */; };
@@ -142,6 +143,7 @@
 		CA305D3B273517330010A3AC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		CA305D3D2735174B0010A3AC /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		CA305D4127351A4B0010A3AC /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		CA305D4327351D490010A3AC /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CAE18CAB2734EDE500C967CD /* WordsFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFactoryApp.swift; sourceTree = "<group>"; };
 		CAE18CB02734EDE500C967CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				CA305D4127351A4B0010A3AC /* SignUpView.swift */,
+				CA305D4327351D490010A3AC /* SignUpViewModel.swift */,
 			);
 			path = "Sign UP";
 			sourceTree = "<group>";
@@ -909,6 +912,7 @@
 				CAE18D272734F48100C967CD /* Font+Custom.swift in Sources */,
 				CAE18D312735150A00C967CD /* BannerShowingSingleton.swift in Sources */,
 				CA305D3C273517330010A3AC /* OnboardingView.swift in Sources */,
+				CA305D4427351D490010A3AC /* SignUpViewModel.swift in Sources */,
 				CA305D4227351A4B0010A3AC /* SignUpView.swift in Sources */,
 				CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */,
 				CA305D3E2735174B0010A3AC /* OnboardingViewModel.swift in Sources */,
@@ -1033,7 +1037,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1088,7 +1092,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
