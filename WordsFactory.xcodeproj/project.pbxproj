@@ -13,6 +13,9 @@
 		6DD46ACD86DBEC6DE88A6377 /* Pods_WordsFactory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96758BAC20E1437C4725A9B9 /* Pods_WordsFactory.framework */; };
 		7CC1EA60B30F95E633BE5ED9 /* Pods_WordsFactory_WordsFactoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BC091F3BDF1CEEFC089974 /* Pods_WordsFactory_WordsFactoryUITests.framework */; };
 		9CD7D6F1CA9D6D60D059E361 /* Pods_WordsFactoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3498D346B532E63F3B3F674 /* Pods_WordsFactoryTests.framework */; };
+		CA305D3C273517330010A3AC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D3B273517330010A3AC /* OnboardingView.swift */; };
+		CA305D3E2735174B0010A3AC /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D3D2735174B0010A3AC /* OnboardingViewModel.swift */; };
+		CA305D4227351A4B0010A3AC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D4127351A4B0010A3AC /* SignUpView.swift */; };
 		CAE18CAF2734EDE500C967CD /* WordsFactoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */; };
 		CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CB02734EDE500C967CD /* ContentView.swift */; };
 		CAE18CB32734EDE800C967CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18CB22734EDE800C967CD /* Assets.xcassets */; };
@@ -37,6 +40,10 @@
 		CAE18D202734F31400C967CD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE18D1F2734F31400C967CD /* Launch Screen.storyboard */; };
 		CAE18D252734F47100C967CD /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D242734F47100C967CD /* Color+Custom.swift */; };
 		CAE18D272734F48100C967CD /* Font+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D262734F48100C967CD /* Font+Custom.swift */; };
+		CAE18D2D273513F500C967CD /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE18D2A273513F400C967CD /* Rubik-Regular.ttf */; };
+		CAE18D2E273513F500C967CD /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE18D2B273513F400C967CD /* Rubik-Bold.ttf */; };
+		CAE18D2F273513F500C967CD /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE18D2C273513F500C967CD /* Rubik-Medium.ttf */; };
+		CAE18D312735150A00C967CD /* BannerShowingSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D302735150A00C967CD /* BannerShowingSingleton.swift */; };
 		E9FCF612C8176CB4CFDF7C35 /* Pods_WatchWordsFactory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EFA661F254B7F1399071CE /* Pods_WatchWordsFactory.framework */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +139,9 @@
 		B76CFCFEFA69D922E4C09301 /* Pods-WatchWordsFactory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchWordsFactory.release.xcconfig"; path = "Target Support Files/Pods-WatchWordsFactory/Pods-WatchWordsFactory.release.xcconfig"; sourceTree = "<group>"; };
 		BEF6AFBA626A80CA5017512D /* Pods-WordsFactory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordsFactory.release.xcconfig"; path = "Target Support Files/Pods-WordsFactory/Pods-WordsFactory.release.xcconfig"; sourceTree = "<group>"; };
 		BFCF53238735967E8F6F693A /* Pods-WordsFactoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordsFactoryTests.release.xcconfig"; path = "Target Support Files/Pods-WordsFactoryTests/Pods-WordsFactoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA305D3B273517330010A3AC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		CA305D3D2735174B0010A3AC /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		CA305D4127351A4B0010A3AC /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CAE18CAB2734EDE500C967CD /* WordsFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFactoryApp.swift; sourceTree = "<group>"; };
 		CAE18CB02734EDE500C967CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -161,6 +171,11 @@
 		CAE18D1F2734F31400C967CD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CAE18D242734F47100C967CD /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
 		CAE18D262734F48100C967CD /* Font+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Custom.swift"; sourceTree = "<group>"; };
+		CAE18D2927350E4200C967CD /* WordsFactory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WordsFactory.entitlements; sourceTree = "<group>"; };
+		CAE18D2A273513F400C967CD /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		CAE18D2B273513F400C967CD /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		CAE18D2C273513F500C967CD /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		CAE18D302735150A00C967CD /* BannerShowingSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerShowingSingleton.swift; sourceTree = "<group>"; };
 		CE01AB1987A638A8CDD2D185 /* Pods-WidgetWordsFactoryExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetWordsFactoryExtension.debug.xcconfig"; path = "Target Support Files/Pods-WidgetWordsFactoryExtension/Pods-WidgetWordsFactoryExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		CF384A8084F77B40E83E78FA /* Pods-WordsFactory-WordsFactoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordsFactory-WordsFactoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-WordsFactory-WordsFactoryUITests/Pods-WordsFactory-WordsFactoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6EEB288340D52220F201481 /* Pods_WatchWordsFactory_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchWordsFactory_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +245,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA305D3A273517130010A3AC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CA305D3B273517330010A3AC /* OnboardingView.swift */,
+				CA305D3D2735174B0010A3AC /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CA305D4027351A380010A3AC /* Sign UP */ = {
+			isa = PBXGroup;
+			children = (
+				CA305D4127351A4B0010A3AC /* SignUpView.swift */,
+			);
+			path = "Sign UP";
+			sourceTree = "<group>";
+		};
 		CAE18CA22734EDE500C967CD = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +294,10 @@
 		CAE18CAD2734EDE500C967CD /* WordsFactory */ = {
 			isa = PBXGroup;
 			children = (
+				CA305D4027351A380010A3AC /* Sign UP */,
+				CA305D3A273517130010A3AC /* Onboarding */,
+				CAE18D2927350E4200C967CD /* WordsFactory.entitlements */,
+				CAE18D282734F66A00C967CD /* Fonts */,
 				CAE18D232734F45700C967CD /* Extensions */,
 				CAE18D222734F43400C967CD /* Services */,
 				CAE18D1E2734F2FA00C967CD /* common */,
@@ -373,8 +409,19 @@
 			children = (
 				CAE18D242734F47100C967CD /* Color+Custom.swift */,
 				CAE18D262734F48100C967CD /* Font+Custom.swift */,
+				CAE18D302735150A00C967CD /* BannerShowingSingleton.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CAE18D282734F66A00C967CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18D2B273513F400C967CD /* Rubik-Bold.ttf */,
+				CAE18D2C273513F500C967CD /* Rubik-Medium.ttf */,
+				CAE18D2A273513F400C967CD /* Rubik-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		F42A32F428AFE87644176B34 /* Pods */ = {
@@ -606,8 +653,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAE18D202734F31400C967CD /* Launch Screen.storyboard in Resources */,
+				CAE18D2D273513F500C967CD /* Rubik-Regular.ttf in Resources */,
 				CAE18CB62734EDE800C967CD /* Preview Assets.xcassets in Resources */,
+				CAE18D2F273513F500C967CD /* Rubik-Medium.ttf in Resources */,
 				CAE18CB32734EDE800C967CD /* Assets.xcassets in Resources */,
+				CAE18D2E273513F500C967CD /* Rubik-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -857,7 +907,11 @@
 			files = (
 				CAE18D252734F47100C967CD /* Color+Custom.swift in Sources */,
 				CAE18D272734F48100C967CD /* Font+Custom.swift in Sources */,
+				CAE18D312735150A00C967CD /* BannerShowingSingleton.swift in Sources */,
+				CA305D3C273517330010A3AC /* OnboardingView.swift in Sources */,
+				CA305D4227351A4B0010A3AC /* SignUpView.swift in Sources */,
 				CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */,
+				CA305D3E2735174B0010A3AC /* OnboardingViewModel.swift in Sources */,
 				CAE18CAF2734EDE500C967CD /* WordsFactoryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1051,6 +1105,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WordsFactory/WordsFactory.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WordsFactory/Preview Content\"";
@@ -1084,6 +1139,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WordsFactory/WordsFactory.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WordsFactory/Preview Content\"";
