@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TrainingView: View {
   @ObservedObject private var viewModel = TrainingViewModel()
-  private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+  private let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
   
   var body: some View {
     VStack {
@@ -60,7 +60,8 @@ struct TrainingView: View {
       if viewModel.trainIsStarted {
         viewModel.secondsLeft -= 1
       }
-    }.background(
+    }
+    .background(
       NavigationLink(isActive: $viewModel.goToTrain,
                      destination: {
                        QuestionView()

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuestionView: View {
   @ObservedObject private var viewModel = QuestionViewModel()
-  private let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+  private let timer = Timer.publish(every: 0.1, on: .current, in: .common).autoconnect()
   
   var body: some View {
     VStack {
@@ -47,11 +47,11 @@ struct QuestionView: View {
           .frame(width: UIScreen.main.bounds.width - 32, height: 5, alignment: .leading)
           .foregroundColor(.incGray)
         
-        Capsule()
+        LinearGradient(colors: [.red, .yellow],
+                                   startPoint: .leading, endPoint: .trailing)
           .frame(width: (CGFloat(UIScreen.main.bounds.width - 32.0) / 5.0) * viewModel.secondsLeftForQuestion,
                  height: 5, alignment: .leading)
-          .background(LinearGradient(colors: [.red, .yellow],
-                                     startPoint: .leading, endPoint: .trailing))
+          .clipShape(Capsule())
       }
     }.onReceive(timer) { _ in
       viewModel.secondsLeftForQuestion -= 0.1

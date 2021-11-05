@@ -18,7 +18,9 @@ class QuestionViewModel: ObservableObject {
   @Published var question: Question?
   @Published var currentQuestion: Int = 0 {
     didSet {
-      question = questions[currentQuestion]
+      if currentQuestion + 1 < questions.count {
+        question = questions[currentQuestion]
+      }
       secondsLeftForQuestion = 0.0
     }
   }
@@ -26,27 +28,37 @@ class QuestionViewModel: ObservableObject {
     didSet {
       if secondsLeftForQuestion <= 0.0 {
         currentQuestion += 1
+        secondsLeftForQuestion = 5.0
       }
     }
   }
+  @Published var finish: Bool = false
+  
+  private let testsFacade = TestsFacade()
   
   init() {
     loadQuestions()
   }
   
+  func repeatTrain() {
+    finish = false
+    loadQuestions()
+  }
+  
   func answer(_ answer: Int) {
-    if answer == question?.correctAnswer {
+    if answer + 1 == questions[currentQuestion].correctAnswer {
       questions[currentQuestion].isCorrect = true
     }
-    currentQuestion += 1
-    secondsLeftForQuestion = 5.0
+    if currentQuestion + 1 < questions.count {
+      currentQuestion += 1
+    }
+    if currentQuestion + 1 == questions.count {
+      finish = true
+    }
   }
   
   func loadQuestions() {
-    questions = Array(repeating: Question(meaning: "The practice or skill of preparing food by combining, mixing, and heating ingredients.",
-                                          answers: ["Cooking", "Smiling", "Freezing"].shuffled(),
-                                          correctAnswer: 3),
-                      count: 1)
+    questions = testsFacade.getQuestions()
     question = questions[0]
   }
 }

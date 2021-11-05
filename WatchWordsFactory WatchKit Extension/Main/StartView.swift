@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StartView: View {
   @ObservedObject private var viewModel = StartViewModel()
-  private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+  private let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
   
   var body: some View {
     VStack {

@@ -14,6 +14,8 @@ class TrainViewModel: ObservableObject {
   @Published var correctAnswers = 0
   @Published var incorrectAnswers = 0
   
+  private let testsFacade = TestsFacade()
+  
   init() {
     loadQuestions()
   }
@@ -39,9 +41,6 @@ class TrainViewModel: ObservableObject {
   }
   
   private func loadQuestions() {
-    questions = Array(repeating: Question(meaning: "The practice or skill of preparing food by combining, mixing, and heating ingredients.",
-                                          answers: ["Cooking", "Smiling"],
-                                          correctAnswer: 1),
-                      count: 5)
+    questions = testsFacade.getQuestions()
   }
 }

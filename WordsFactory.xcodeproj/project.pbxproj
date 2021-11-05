@@ -51,6 +51,8 @@
 		CA305D81273571BA0010A3AC /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D80273571BA0010A3AC /* LocalStorageService.swift */; };
 		CA305D83273571CD0010A3AC /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D80273571BA0010A3AC /* LocalStorageService.swift */; };
 		CA305D84273572C60010A3AC /* DictionaryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D54273526B70010A3AC /* DictionaryResponse.swift */; };
+		CA305D8B27357B5D0010A3AC /* TestsFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D8A27357B5D0010A3AC /* TestsFacade.swift */; };
+		CA305D8C27357C110010A3AC /* TestsFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D8A27357B5D0010A3AC /* TestsFacade.swift */; };
 		CAE18CAF2734EDE500C967CD /* WordsFactoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */; };
 		CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CB02734EDE500C967CD /* ContentView.swift */; };
 		CAE18CB32734EDE800C967CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18CB22734EDE800C967CD /* Assets.xcassets */; };
@@ -198,6 +200,7 @@
 		CA305D7B27356F980010A3AC /* TrainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewModel.swift; sourceTree = "<group>"; };
 		CA305D7D2735700C0010A3AC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CA305D80273571BA0010A3AC /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
+		CA305D8A27357B5D0010A3AC /* TestsFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsFacade.swift; sourceTree = "<group>"; };
 		CAE18CAB2734EDE500C967CD /* WordsFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFactoryApp.swift; sourceTree = "<group>"; };
 		CAE18CB02734EDE500C967CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -548,6 +551,7 @@
 			children = (
 				CA305D51273524B50010A3AC /* NetworkService.swift */,
 				CA305D80273571BA0010A3AC /* LocalStorageService.swift */,
+				CA305D8A27357B5D0010A3AC /* TestsFacade.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1063,6 +1067,7 @@
 				CA305D5F2735550E0010A3AC /* TrainingViewModel.swift in Sources */,
 				CA305D50273524610010A3AC /* View+Rounded.swift in Sources */,
 				CA305D4C273523CF0010A3AC /* DictionaryView.swift in Sources */,
+				CA305D8B27357B5D0010A3AC /* TestsFacade.swift in Sources */,
 				CA305D49273521600010A3AC /* TabbarViewModel.swift in Sources */,
 				CAE18D252734F47100C967CD /* Color+Custom.swift in Sources */,
 				CAE18D272734F48100C967CD /* Font+Custom.swift in Sources */,
@@ -1122,6 +1127,7 @@
 				CA305D7127356DAE0010A3AC /* SecondState.swift in Sources */,
 				CA305D7F273570690010A3AC /* Question.swift in Sources */,
 				CA305D7527356DFB0010A3AC /* StartView.swift in Sources */,
+				CA305D8C27357C110010A3AC /* TestsFacade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
