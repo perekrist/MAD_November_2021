@@ -1,0 +1,1512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E79D3965364D1001E3555A8 /* Pods_WidgetWordsFactoryExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB3649D5B51822ACA9ED474 /* Pods_WidgetWordsFactoryExtension.framework */; };
+		53D78A22DAF7D7AA1FB2D327 /* Pods_WatchWordsFactory_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525F7C2738DE9CB15DD8DB23 /* Pods_WatchWordsFactory_WatchKit_Extension.framework */; };
+		678DE86B3B148C0C5F60F5F7 /* Pods_WatchWordsFactory_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EEB288340D52220F201481 /* Pods_WatchWordsFactory_WatchKit_App.framework */; };
+		6DD46ACD86DBEC6DE88A6377 /* Pods_WordsFactory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96758BAC20E1437C4725A9B9 /* Pods_WordsFactory.framework */; };
+		7CC1EA60B30F95E633BE5ED9 /* Pods_WordsFactory_WordsFactoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BC091F3BDF1CEEFC089974 /* Pods_WordsFactory_WordsFactoryUITests.framework */; };
+		9CD7D6F1CA9D6D60D059E361 /* Pods_WordsFactoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3498D346B532E63F3B3F674 /* Pods_WordsFactoryTests.framework */; };
+		CAE18CAF2734EDE500C967CD /* WordsFactoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */; };
+		CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CB02734EDE500C967CD /* ContentView.swift */; };
+		CAE18CB32734EDE800C967CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18CB22734EDE800C967CD /* Assets.xcassets */; };
+		CAE18CB62734EDE800C967CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18CB52734EDE800C967CD /* Preview Assets.xcassets */; };
+		CAE18CC02734EDE900C967CD /* WordsFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CBF2734EDE900C967CD /* WordsFactoryTests.swift */; };
+		CAE18CCA2734EDE900C967CD /* WordsFactoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CC92734EDE900C967CD /* WordsFactoryUITests.swift */; };
+		CAE18CCC2734EDE900C967CD /* WordsFactoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CCB2734EDE900C967CD /* WordsFactoryUITestsLaunchTests.swift */; };
+		CAE18CDE2734EE8B00C967CD /* WatchWordsFactory WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CAE18CDD2734EE8B00C967CD /* WatchWordsFactory WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CAE18CE32734EE8F00C967CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18CE22734EE8F00C967CD /* Assets.xcassets */; };
+		CAE18CE92734EE8F00C967CD /* WatchWordsFactory WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CAE18CE82734EE8F00C967CD /* WatchWordsFactory WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CAE18CEE2734EE8F00C967CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CED2734EE8F00C967CD /* ContentView.swift */; };
+		CAE18CF02734EE8F00C967CD /* WordsFactoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CEF2734EE8F00C967CD /* WordsFactoryApp.swift */; };
+		CAE18CF22734EE8F00C967CD /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CF12734EE8F00C967CD /* ComplicationController.swift */; };
+		CAE18CF42734EE9100C967CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18CF32734EE9100C967CD /* Assets.xcassets */; };
+		CAE18CF72734EE9100C967CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18CF62734EE9100C967CD /* Preview Assets.xcassets */; };
+		CAE18D0B2734EEC800C967CD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE18D0A2734EEC800C967CD /* WidgetKit.framework */; };
+		CAE18D0D2734EEC800C967CD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE18D0C2734EEC800C967CD /* SwiftUI.framework */; };
+		CAE18D102734EEC800C967CD /* WidgetWordsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D0F2734EEC800C967CD /* WidgetWordsFactory.swift */; };
+		CAE18D122734EECB00C967CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18D112734EECB00C967CD /* Assets.xcassets */; };
+		CAE18D162734EECB00C967CD /* WidgetWordsFactoryExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CAE18D082734EEC800C967CD /* WidgetWordsFactoryExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CAE18D1D2734F28200C967CD /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = CAE18D1C2734F28200C967CD /* SwiftUIX */; };
+		CAE18D202734F31400C967CD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE18D1F2734F31400C967CD /* Launch Screen.storyboard */; };
+		CAE18D252734F47100C967CD /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D242734F47100C967CD /* Color+Custom.swift */; };
+		CAE18D272734F48100C967CD /* Font+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D262734F48100C967CD /* Font+Custom.swift */; };
+		E9FCF612C8176CB4CFDF7C35 /* Pods_WatchWordsFactory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EFA661F254B7F1399071CE /* Pods_WatchWordsFactory.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAE18CBC2734EDE900C967CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE18CA32734EDE500C967CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE18CAA2734EDE500C967CD;
+			remoteInfo = WordsFactory;
+		};
+		CAE18CC62734EDE900C967CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE18CA32734EDE500C967CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE18CAA2734EDE500C967CD;
+			remoteInfo = WordsFactory;
+		};
+		CAE18CDF2734EE8B00C967CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE18CA32734EDE500C967CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE18CDC2734EE8B00C967CD;
+			remoteInfo = "WatchWordsFactory WatchKit App";
+		};
+		CAE18CEA2734EE8F00C967CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE18CA32734EDE500C967CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE18CE72734EE8F00C967CD;
+			remoteInfo = "WatchWordsFactory WatchKit Extension";
+		};
+		CAE18D142734EECB00C967CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE18CA32734EDE500C967CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE18D072734EEC800C967CD;
+			remoteInfo = WidgetWordsFactoryExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CAE18CFC2734EE9100C967CD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CAE18CE92734EE8F00C967CD /* WatchWordsFactory WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18D002734EE9100C967CD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CAE18CDE2734EE8B00C967CD /* WatchWordsFactory WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18D1A2734EECB00C967CD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CAE18D162734EECB00C967CD /* WidgetWordsFactoryExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B5D8D645891C1DE72D55546 /* Pods-WidgetWordsFactoryExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetWordsFactoryExtension.release.xcconfig"; path = "Target Support Files/Pods-WidgetWordsFactoryExtension/Pods-WidgetWordsFactoryExtension.release.xcconfig"; sourceTree = "<group>"; };
+		1C5619A409C1870FDEACC9AA /* Pods-WatchWordsFactory WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchWordsFactory WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-WatchWordsFactory WatchKit App/Pods-WatchWordsFactory WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		4088DDA7D2A5E3634F489843 /* Pods-WatchWordsFactory WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchWordsFactory WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-WatchWordsFactory WatchKit Extension/Pods-WatchWordsFactory WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		4AB3649D5B51822ACA9ED474 /* Pods_WidgetWordsFactoryExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WidgetWordsFactoryExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ADAD706DACF0410E696B40F /* Pods-WordsFactory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordsFactory.debug.xcconfig"; path = "Target Support Files/Pods-WordsFactory/Pods-WordsFactory.debug.xcconfig"; sourceTree = "<group>"; };
+		525F7C2738DE9CB15DD8DB23 /* Pods_WatchWordsFactory_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchWordsFactory_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B436381E6BAD8EF0E90C71 /* Pods-WatchWordsFactory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchWordsFactory.debug.xcconfig"; path = "Target Support Files/Pods-WatchWordsFactory/Pods-WatchWordsFactory.debug.xcconfig"; sourceTree = "<group>"; };
+		5DEF3ED9A9DB79090ADEB4FA /* Pods-WatchWordsFactory WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchWordsFactory WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-WatchWordsFactory WatchKit App/Pods-WatchWordsFactory WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		64212CACFDC34CD03F0A3B45 /* Pods-WordsFactory-WordsFactoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordsFactory-WordsFactoryUITests.release.xcconfig"; path = "Target Support Files/Pods-WordsFactory-WordsFactoryUITests/Pods-WordsFactory-WordsFactoryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		66BC091F3BDF1CEEFC089974 /* Pods_WordsFactory_WordsFactoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordsFactory_WordsFactoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88EFA661F254B7F1399071CE /* Pods_WatchWordsFactory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchWordsFactory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96758BAC20E1437C4725A9B9 /* Pods_WordsFactory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordsFactory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3498D346B532E63F3B3F674 /* Pods_WordsFactoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordsFactoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C0792226E70AE2F5C1EE65 /* Pods-WordsFactoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordsFactoryTests.debug.xcconfig"; path = "Target Support Files/Pods-WordsFactoryTests/Pods-WordsFactoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B76CFCFEFA69D922E4C09301 /* Pods-WatchWordsFactory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchWordsFactory.release.xcconfig"; path = "Target Support Files/Pods-WatchWordsFactory/Pods-WatchWordsFactory.release.xcconfig"; sourceTree = "<group>"; };
+		BEF6AFBA626A80CA5017512D /* Pods-WordsFactory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordsFactory.release.xcconfig"; path = "Target Support Files/Pods-WordsFactory/Pods-WordsFactory.release.xcconfig"; sourceTree = "<group>"; };
+		BFCF53238735967E8F6F693A /* Pods-WordsFactoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordsFactoryTests.release.xcconfig"; path = "Target Support Files/Pods-WordsFactoryTests/Pods-WordsFactoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		CAE18CAB2734EDE500C967CD /* WordsFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFactoryApp.swift; sourceTree = "<group>"; };
+		CAE18CB02734EDE500C967CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CAE18CB22734EDE800C967CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAE18CB52734EDE800C967CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CAE18CBB2734EDE900C967CD /* WordsFactoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordsFactoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE18CBF2734EDE900C967CD /* WordsFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFactoryTests.swift; sourceTree = "<group>"; };
+		CAE18CC52734EDE900C967CD /* WordsFactoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordsFactoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE18CC92734EDE900C967CD /* WordsFactoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFactoryUITests.swift; sourceTree = "<group>"; };
+		CAE18CCB2734EDE900C967CD /* WordsFactoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFactoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAE18CDA2734EE8A00C967CD /* WatchWordsFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchWordsFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE18CDD2734EE8B00C967CD /* WatchWordsFactory WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchWordsFactory WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE18CE22734EE8F00C967CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAE18CE82734EE8F00C967CD /* WatchWordsFactory WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchWordsFactory WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE18CED2734EE8F00C967CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CAE18CEF2734EE8F00C967CD /* WordsFactoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFactoryApp.swift; sourceTree = "<group>"; };
+		CAE18CF12734EE8F00C967CD /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CAE18CF32734EE9100C967CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAE18CF62734EE9100C967CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CAE18CF82734EE9100C967CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE18D082734EEC800C967CD /* WidgetWordsFactoryExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetWordsFactoryExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE18D0A2734EEC800C967CD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CAE18D0C2734EEC800C967CD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CAE18D0F2734EEC800C967CD /* WidgetWordsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetWordsFactory.swift; sourceTree = "<group>"; };
+		CAE18D112734EECB00C967CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAE18D132734EECB00C967CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE18D1F2734F31400C967CD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CAE18D242734F47100C967CD /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
+		CAE18D262734F48100C967CD /* Font+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Custom.swift"; sourceTree = "<group>"; };
+		CE01AB1987A638A8CDD2D185 /* Pods-WidgetWordsFactoryExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetWordsFactoryExtension.debug.xcconfig"; path = "Target Support Files/Pods-WidgetWordsFactoryExtension/Pods-WidgetWordsFactoryExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		CF384A8084F77B40E83E78FA /* Pods-WordsFactory-WordsFactoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordsFactory-WordsFactoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-WordsFactory-WordsFactoryUITests/Pods-WordsFactory-WordsFactoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6EEB288340D52220F201481 /* Pods_WatchWordsFactory_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchWordsFactory_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9570F8EC74D7D6CC9A0BBD /* Pods-WatchWordsFactory WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchWordsFactory WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-WatchWordsFactory WatchKit Extension/Pods-WatchWordsFactory WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3259BD846C97CBF9DD888298 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9FCF612C8176CB4CFDF7C35 /* Pods_WatchWordsFactory.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FC43678C77AB9AB15C7EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				678DE86B3B148C0C5F60F5F7 /* Pods_WatchWordsFactory_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18CA82734EDE500C967CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD46ACD86DBEC6DE88A6377 /* Pods_WordsFactory.framework in Frameworks */,
+				CAE18D1D2734F28200C967CD /* SwiftUIX in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18CB82734EDE900C967CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD7D6F1CA9D6D60D059E361 /* Pods_WordsFactoryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18CC22734EDE900C967CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC1EA60B30F95E633BE5ED9 /* Pods_WordsFactory_WordsFactoryUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18CE52734EE8F00C967CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D78A22DAF7D7AA1FB2D327 /* Pods_WatchWordsFactory_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18D052734EEC800C967CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE18D0D2734EEC800C967CD /* SwiftUI.framework in Frameworks */,
+				CAE18D0B2734EEC800C967CD /* WidgetKit.framework in Frameworks */,
+				4E79D3965364D1001E3555A8 /* Pods_WidgetWordsFactoryExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAE18CA22734EDE500C967CD = {
+			isa = PBXGroup;
+			children = (
+				CAE18CAD2734EDE500C967CD /* WordsFactory */,
+				CAE18CBE2734EDE900C967CD /* WordsFactoryTests */,
+				CAE18CC82734EDE900C967CD /* WordsFactoryUITests */,
+				CAE18CE12734EE8B00C967CD /* WatchWordsFactory WatchKit App */,
+				CAE18CEC2734EE8F00C967CD /* WatchWordsFactory WatchKit Extension */,
+				CAE18D0E2734EEC800C967CD /* WidgetWordsFactory */,
+				CAE18D092734EEC800C967CD /* Frameworks */,
+				CAE18CAC2734EDE500C967CD /* Products */,
+				F42A32F428AFE87644176B34 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		CAE18CAC2734EDE500C967CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18CAB2734EDE500C967CD /* WordsFactory.app */,
+				CAE18CBB2734EDE900C967CD /* WordsFactoryTests.xctest */,
+				CAE18CC52734EDE900C967CD /* WordsFactoryUITests.xctest */,
+				CAE18CDA2734EE8A00C967CD /* WatchWordsFactory.app */,
+				CAE18CDD2734EE8B00C967CD /* WatchWordsFactory WatchKit App.app */,
+				CAE18CE82734EE8F00C967CD /* WatchWordsFactory WatchKit Extension.appex */,
+				CAE18D082734EEC800C967CD /* WidgetWordsFactoryExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAE18CAD2734EDE500C967CD /* WordsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18D232734F45700C967CD /* Extensions */,
+				CAE18D222734F43400C967CD /* Services */,
+				CAE18D1E2734F2FA00C967CD /* common */,
+				CAE18CB22734EDE800C967CD /* Assets.xcassets */,
+				CAE18CB42734EDE800C967CD /* Preview Content */,
+			);
+			path = WordsFactory;
+			sourceTree = "<group>";
+		};
+		CAE18CB42734EDE800C967CD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18CB52734EDE800C967CD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAE18CBE2734EDE900C967CD /* WordsFactoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18CBF2734EDE900C967CD /* WordsFactoryTests.swift */,
+			);
+			path = WordsFactoryTests;
+			sourceTree = "<group>";
+		};
+		CAE18CC82734EDE900C967CD /* WordsFactoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18CC92734EDE900C967CD /* WordsFactoryUITests.swift */,
+				CAE18CCB2734EDE900C967CD /* WordsFactoryUITestsLaunchTests.swift */,
+			);
+			path = WordsFactoryUITests;
+			sourceTree = "<group>";
+		};
+		CAE18CE12734EE8B00C967CD /* WatchWordsFactory WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18CE22734EE8F00C967CD /* Assets.xcassets */,
+			);
+			path = "WatchWordsFactory WatchKit App";
+			sourceTree = "<group>";
+		};
+		CAE18CEC2734EE8F00C967CD /* WatchWordsFactory WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18CED2734EE8F00C967CD /* ContentView.swift */,
+				CAE18CEF2734EE8F00C967CD /* WordsFactoryApp.swift */,
+				CAE18CF12734EE8F00C967CD /* ComplicationController.swift */,
+				CAE18CF32734EE9100C967CD /* Assets.xcassets */,
+				CAE18CF82734EE9100C967CD /* Info.plist */,
+				CAE18CF52734EE9100C967CD /* Preview Content */,
+			);
+			path = "WatchWordsFactory WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CAE18CF52734EE9100C967CD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18CF62734EE9100C967CD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAE18D092734EEC800C967CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18D0A2734EEC800C967CD /* WidgetKit.framework */,
+				CAE18D0C2734EEC800C967CD /* SwiftUI.framework */,
+				88EFA661F254B7F1399071CE /* Pods_WatchWordsFactory.framework */,
+				D6EEB288340D52220F201481 /* Pods_WatchWordsFactory_WatchKit_App.framework */,
+				525F7C2738DE9CB15DD8DB23 /* Pods_WatchWordsFactory_WatchKit_Extension.framework */,
+				4AB3649D5B51822ACA9ED474 /* Pods_WidgetWordsFactoryExtension.framework */,
+				96758BAC20E1437C4725A9B9 /* Pods_WordsFactory.framework */,
+				66BC091F3BDF1CEEFC089974 /* Pods_WordsFactory_WordsFactoryUITests.framework */,
+				A3498D346B532E63F3B3F674 /* Pods_WordsFactoryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAE18D0E2734EEC800C967CD /* WidgetWordsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18D0F2734EEC800C967CD /* WidgetWordsFactory.swift */,
+				CAE18D112734EECB00C967CD /* Assets.xcassets */,
+				CAE18D132734EECB00C967CD /* Info.plist */,
+			);
+			path = WidgetWordsFactory;
+			sourceTree = "<group>";
+		};
+		CAE18D1E2734F2FA00C967CD /* common */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18CB02734EDE500C967CD /* ContentView.swift */,
+				CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */,
+				CAE18D1F2734F31400C967CD /* Launch Screen.storyboard */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		CAE18D222734F43400C967CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CAE18D232734F45700C967CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18D242734F47100C967CD /* Color+Custom.swift */,
+				CAE18D262734F48100C967CD /* Font+Custom.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F42A32F428AFE87644176B34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52B436381E6BAD8EF0E90C71 /* Pods-WatchWordsFactory.debug.xcconfig */,
+				B76CFCFEFA69D922E4C09301 /* Pods-WatchWordsFactory.release.xcconfig */,
+				5DEF3ED9A9DB79090ADEB4FA /* Pods-WatchWordsFactory WatchKit App.debug.xcconfig */,
+				1C5619A409C1870FDEACC9AA /* Pods-WatchWordsFactory WatchKit App.release.xcconfig */,
+				4088DDA7D2A5E3634F489843 /* Pods-WatchWordsFactory WatchKit Extension.debug.xcconfig */,
+				FD9570F8EC74D7D6CC9A0BBD /* Pods-WatchWordsFactory WatchKit Extension.release.xcconfig */,
+				CE01AB1987A638A8CDD2D185 /* Pods-WidgetWordsFactoryExtension.debug.xcconfig */,
+				0B5D8D645891C1DE72D55546 /* Pods-WidgetWordsFactoryExtension.release.xcconfig */,
+				4ADAD706DACF0410E696B40F /* Pods-WordsFactory.debug.xcconfig */,
+				BEF6AFBA626A80CA5017512D /* Pods-WordsFactory.release.xcconfig */,
+				CF384A8084F77B40E83E78FA /* Pods-WordsFactory-WordsFactoryUITests.debug.xcconfig */,
+				64212CACFDC34CD03F0A3B45 /* Pods-WordsFactory-WordsFactoryUITests.release.xcconfig */,
+				A4C0792226E70AE2F5C1EE65 /* Pods-WordsFactoryTests.debug.xcconfig */,
+				BFCF53238735967E8F6F693A /* Pods-WordsFactoryTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAE18CAA2734EDE500C967CD /* WordsFactory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE18CCF2734EDE900C967CD /* Build configuration list for PBXNativeTarget "WordsFactory" */;
+			buildPhases = (
+				AFA7E0E22E7492CB540A2CE9 /* [CP] Check Pods Manifest.lock */,
+				CAE18CA72734EDE500C967CD /* Sources */,
+				CAE18CA82734EDE500C967CD /* Frameworks */,
+				CAE18CA92734EDE500C967CD /* Resources */,
+				CAE18D1A2734EECB00C967CD /* Embed App Extensions */,
+				A6F17CE1ED35EB79C473EB00 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE18D152734EECB00C967CD /* PBXTargetDependency */,
+			);
+			name = WordsFactory;
+			packageProductDependencies = (
+				CAE18D1C2734F28200C967CD /* SwiftUIX */,
+			);
+			productName = WordsFactory;
+			productReference = CAE18CAB2734EDE500C967CD /* WordsFactory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAE18CBA2734EDE900C967CD /* WordsFactoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE18CD22734EDE900C967CD /* Build configuration list for PBXNativeTarget "WordsFactoryTests" */;
+			buildPhases = (
+				BEEC66B0A60230EB3E467883 /* [CP] Check Pods Manifest.lock */,
+				CAE18CB72734EDE900C967CD /* Sources */,
+				CAE18CB82734EDE900C967CD /* Frameworks */,
+				CAE18CB92734EDE900C967CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE18CBD2734EDE900C967CD /* PBXTargetDependency */,
+			);
+			name = WordsFactoryTests;
+			productName = WordsFactoryTests;
+			productReference = CAE18CBB2734EDE900C967CD /* WordsFactoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAE18CC42734EDE900C967CD /* WordsFactoryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE18CD52734EDE900C967CD /* Build configuration list for PBXNativeTarget "WordsFactoryUITests" */;
+			buildPhases = (
+				92060D8D2D2D9C9C45CCA8FA /* [CP] Check Pods Manifest.lock */,
+				CAE18CC12734EDE900C967CD /* Sources */,
+				CAE18CC22734EDE900C967CD /* Frameworks */,
+				CAE18CC32734EDE900C967CD /* Resources */,
+				F27C2005ED848E86B68B7F28 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE18CC72734EDE900C967CD /* PBXTargetDependency */,
+			);
+			name = WordsFactoryUITests;
+			productName = WordsFactoryUITests;
+			productReference = CAE18CC52734EDE900C967CD /* WordsFactoryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CAE18CD92734EE8A00C967CD /* WatchWordsFactory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE18D012734EE9100C967CD /* Build configuration list for PBXNativeTarget "WatchWordsFactory" */;
+			buildPhases = (
+				AEE448B1DD01E59EF4D015A4 /* [CP] Check Pods Manifest.lock */,
+				CAE18CD82734EE8A00C967CD /* Resources */,
+				CAE18D002734EE9100C967CD /* Embed Watch Content */,
+				3259BD846C97CBF9DD888298 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE18CE02734EE8B00C967CD /* PBXTargetDependency */,
+			);
+			name = WatchWordsFactory;
+			productName = WatchWordsFactory;
+			productReference = CAE18CDA2734EE8A00C967CD /* WatchWordsFactory.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		CAE18CDC2734EE8B00C967CD /* WatchWordsFactory WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE18CFD2734EE9100C967CD /* Build configuration list for PBXNativeTarget "WatchWordsFactory WatchKit App" */;
+			buildPhases = (
+				FE90306D7AD1613DF8A813AC /* [CP] Check Pods Manifest.lock */,
+				CAE18CDB2734EE8B00C967CD /* Resources */,
+				CAE18CFC2734EE9100C967CD /* Embed App Extensions */,
+				B7FC43678C77AB9AB15C7EA8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE18CEB2734EE8F00C967CD /* PBXTargetDependency */,
+			);
+			name = "WatchWordsFactory WatchKit App";
+			productName = "WatchWordsFactory WatchKit App";
+			productReference = CAE18CDD2734EE8B00C967CD /* WatchWordsFactory WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CAE18CE72734EE8F00C967CD /* WatchWordsFactory WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE18CF92734EE9100C967CD /* Build configuration list for PBXNativeTarget "WatchWordsFactory WatchKit Extension" */;
+			buildPhases = (
+				F50BCBB99A9C088A854D0BA1 /* [CP] Check Pods Manifest.lock */,
+				CAE18CE42734EE8F00C967CD /* Sources */,
+				CAE18CE52734EE8F00C967CD /* Frameworks */,
+				CAE18CE62734EE8F00C967CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchWordsFactory WatchKit Extension";
+			productName = "WatchWordsFactory WatchKit Extension";
+			productReference = CAE18CE82734EE8F00C967CD /* WatchWordsFactory WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		CAE18D072734EEC800C967CD /* WidgetWordsFactoryExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE18D172734EECB00C967CD /* Build configuration list for PBXNativeTarget "WidgetWordsFactoryExtension" */;
+			buildPhases = (
+				DFC46DBEB84012D5C7BAB01C /* [CP] Check Pods Manifest.lock */,
+				CAE18D042734EEC800C967CD /* Sources */,
+				CAE18D052734EEC800C967CD /* Frameworks */,
+				CAE18D062734EEC800C967CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetWordsFactoryExtension;
+			productName = WidgetWordsFactoryExtension;
+			productReference = CAE18D082734EEC800C967CD /* WidgetWordsFactoryExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAE18CA32734EDE500C967CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					CAE18CAA2734EDE500C967CD = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					CAE18CBA2734EDE900C967CD = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CAE18CAA2734EDE500C967CD;
+					};
+					CAE18CC42734EDE900C967CD = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CAE18CAA2734EDE500C967CD;
+					};
+					CAE18CD92734EE8A00C967CD = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					CAE18CDC2734EE8B00C967CD = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					CAE18CE72734EE8F00C967CD = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					CAE18D072734EEC800C967CD = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = CAE18CA62734EDE500C967CD /* Build configuration list for PBXProject "WordsFactory" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAE18CA22734EDE500C967CD;
+			packageReferences = (
+				CAE18D1B2734F28200C967CD /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
+			productRefGroup = CAE18CAC2734EDE500C967CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAE18CAA2734EDE500C967CD /* WordsFactory */,
+				CAE18CBA2734EDE900C967CD /* WordsFactoryTests */,
+				CAE18CC42734EDE900C967CD /* WordsFactoryUITests */,
+				CAE18CD92734EE8A00C967CD /* WatchWordsFactory */,
+				CAE18CDC2734EE8B00C967CD /* WatchWordsFactory WatchKit App */,
+				CAE18CE72734EE8F00C967CD /* WatchWordsFactory WatchKit Extension */,
+				CAE18D072734EEC800C967CD /* WidgetWordsFactoryExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAE18CA92734EDE500C967CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE18D202734F31400C967CD /* Launch Screen.storyboard in Resources */,
+				CAE18CB62734EDE800C967CD /* Preview Assets.xcassets in Resources */,
+				CAE18CB32734EDE800C967CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18CB92734EDE900C967CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18CC32734EDE900C967CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18CD82734EE8A00C967CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18CDB2734EE8B00C967CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE18CE32734EE8F00C967CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18CE62734EE8F00C967CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE18CF72734EE9100C967CD /* Preview Assets.xcassets in Resources */,
+				CAE18CF42734EE9100C967CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18D062734EEC800C967CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE18D122734EECB00C967CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92060D8D2D2D9C9C45CCA8FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordsFactory-WordsFactoryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6F17CE1ED35EB79C473EB00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordsFactory/Pods-WordsFactory-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordsFactory/Pods-WordsFactory-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WordsFactory/Pods-WordsFactory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEE448B1DD01E59EF4D015A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchWordsFactory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFA7E0E22E7492CB540A2CE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordsFactory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEEC66B0A60230EB3E467883 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordsFactoryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFC46DBEB84012D5C7BAB01C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WidgetWordsFactoryExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F27C2005ED848E86B68B7F28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordsFactory-WordsFactoryUITests/Pods-WordsFactory-WordsFactoryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordsFactory-WordsFactoryUITests/Pods-WordsFactory-WordsFactoryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WordsFactory-WordsFactoryUITests/Pods-WordsFactory-WordsFactoryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F50BCBB99A9C088A854D0BA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchWordsFactory WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE90306D7AD1613DF8A813AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchWordsFactory WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAE18CA72734EDE500C967CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE18D252734F47100C967CD /* Color+Custom.swift in Sources */,
+				CAE18D272734F48100C967CD /* Font+Custom.swift in Sources */,
+				CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */,
+				CAE18CAF2734EDE500C967CD /* WordsFactoryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18CB72734EDE900C967CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE18CC02734EDE900C967CD /* WordsFactoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18CC12734EDE900C967CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE18CCA2734EDE900C967CD /* WordsFactoryUITests.swift in Sources */,
+				CAE18CCC2734EDE900C967CD /* WordsFactoryUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18CE42734EE8F00C967CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE18CF02734EE8F00C967CD /* WordsFactoryApp.swift in Sources */,
+				CAE18CEE2734EE8F00C967CD /* ContentView.swift in Sources */,
+				CAE18CF22734EE8F00C967CD /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE18D042734EEC800C967CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE18D102734EEC800C967CD /* WidgetWordsFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAE18CBD2734EDE900C967CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE18CAA2734EDE500C967CD /* WordsFactory */;
+			targetProxy = CAE18CBC2734EDE900C967CD /* PBXContainerItemProxy */;
+		};
+		CAE18CC72734EDE900C967CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE18CAA2734EDE500C967CD /* WordsFactory */;
+			targetProxy = CAE18CC62734EDE900C967CD /* PBXContainerItemProxy */;
+		};
+		CAE18CE02734EE8B00C967CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE18CDC2734EE8B00C967CD /* WatchWordsFactory WatchKit App */;
+			targetProxy = CAE18CDF2734EE8B00C967CD /* PBXContainerItemProxy */;
+		};
+		CAE18CEB2734EE8F00C967CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE18CE72734EE8F00C967CD /* WatchWordsFactory WatchKit Extension */;
+			targetProxy = CAE18CEA2734EE8F00C967CD /* PBXContainerItemProxy */;
+		};
+		CAE18D152734EECB00C967CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE18D072734EEC800C967CD /* WidgetWordsFactoryExtension */;
+			targetProxy = CAE18D142734EECB00C967CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CAE18CCD2734EDE900C967CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAE18CCE2734EDE900C967CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAE18CD02734EDE900C967CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ADAD706DACF0410E696B40F /* Pods-WordsFactory.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WordsFactory/Preview Content\"";
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WordsFactory/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WordsFactory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAE18CD12734EDE900C967CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEF6AFBA626A80CA5017512D /* Pods-WordsFactory.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WordsFactory/Preview Content\"";
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WordsFactory/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WordsFactory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAE18CD32734EDE900C967CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4C0792226E70AE2F5C1EE65 /* Pods-WordsFactoryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WordsFactoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordsFactory.app/WordsFactory";
+			};
+			name = Debug;
+		};
+		CAE18CD42734EDE900C967CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFCF53238735967E8F6F693A /* Pods-WordsFactoryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WordsFactoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordsFactory.app/WordsFactory";
+			};
+			name = Release;
+		};
+		CAE18CD62734EDE900C967CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF384A8084F77B40E83E78FA /* Pods-WordsFactory-WordsFactoryUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WordsFactoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WordsFactory;
+			};
+			name = Debug;
+		};
+		CAE18CD72734EDE900C967CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64212CACFDC34CD03F0A3B45 /* Pods-WordsFactory-WordsFactoryUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WordsFactoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WordsFactory;
+			};
+			name = Release;
+		};
+		CAE18CFA2734EE9100C967CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4088DDA7D2A5E3634F489843 /* Pods-WatchWordsFactory WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchWordsFactory WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchWordsFactory WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchWordsFactory WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WatchWordsFactory.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		CAE18CFB2734EE9100C967CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD9570F8EC74D7D6CC9A0BBD /* Pods-WatchWordsFactory WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchWordsFactory WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchWordsFactory WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchWordsFactory WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WatchWordsFactory.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		CAE18CFE2734EE9100C967CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DEF3ED9A9DB79090ADEB4FA /* Pods-WatchWordsFactory WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchWordsFactory_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchWordsFactory WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WatchWordsFactory.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		CAE18CFF2734EE9100C967CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C5619A409C1870FDEACC9AA /* Pods-WatchWordsFactory WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchWordsFactory_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchWordsFactory WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WatchWordsFactory.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		CAE18D022734EE9100C967CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B436381E6BAD8EF0E90C71 /* Pods-WatchWordsFactory.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WatchWordsFactory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CAE18D032734EE9100C967CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B76CFCFEFA69D922E4C09301 /* Pods-WatchWordsFactory.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WatchWordsFactory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CAE18D182734EECB00C967CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE01AB1987A638A8CDD2D185 /* Pods-WidgetWordsFactoryExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetWordsFactory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetWordsFactory;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WordsFactory.WidgetWordsFactory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAE18D192734EECB00C967CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5D8D645891C1DE72D55546 /* Pods-WidgetWordsFactoryExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NZPBTA9R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetWordsFactory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetWordsFactory;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perekrist.WordsFactory.WidgetWordsFactory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAE18CA62734EDE500C967CD /* Build configuration list for PBXProject "WordsFactory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE18CCD2734EDE900C967CD /* Debug */,
+				CAE18CCE2734EDE900C967CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE18CCF2734EDE900C967CD /* Build configuration list for PBXNativeTarget "WordsFactory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE18CD02734EDE900C967CD /* Debug */,
+				CAE18CD12734EDE900C967CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE18CD22734EDE900C967CD /* Build configuration list for PBXNativeTarget "WordsFactoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE18CD32734EDE900C967CD /* Debug */,
+				CAE18CD42734EDE900C967CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE18CD52734EDE900C967CD /* Build configuration list for PBXNativeTarget "WordsFactoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE18CD62734EDE900C967CD /* Debug */,
+				CAE18CD72734EDE900C967CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE18CF92734EE9100C967CD /* Build configuration list for PBXNativeTarget "WatchWordsFactory WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE18CFA2734EE9100C967CD /* Debug */,
+				CAE18CFB2734EE9100C967CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE18CFD2734EE9100C967CD /* Build configuration list for PBXNativeTarget "WatchWordsFactory WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE18CFE2734EE9100C967CD /* Debug */,
+				CAE18CFF2734EE9100C967CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE18D012734EE9100C967CD /* Build configuration list for PBXNativeTarget "WatchWordsFactory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE18D022734EE9100C967CD /* Debug */,
+				CAE18D032734EE9100C967CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE18D172734EECB00C967CD /* Build configuration list for PBXNativeTarget "WidgetWordsFactoryExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE18D182734EECB00C967CD /* Debug */,
+				CAE18D192734EECB00C967CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAE18D1B2734F28200C967CD /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAE18D1C2734F28200C967CD /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAE18D1B2734F28200C967CD /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CAE18CA32734EDE500C967CD /* Project object */;
+}
