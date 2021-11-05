@@ -19,7 +19,7 @@ class OnboardingViewModel: ObservableObject {
     ("\nImprove your skills", "Quarantine is the perfect time to spend your day learning something new, from anywhere!")]
   
   func skip() {
-    currentPage = 2
+    goToSignUp = true
   }
   
   func makeAction() {

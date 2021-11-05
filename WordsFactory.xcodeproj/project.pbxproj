@@ -17,6 +17,15 @@
 		CA305D3E2735174B0010A3AC /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D3D2735174B0010A3AC /* OnboardingViewModel.swift */; };
 		CA305D4227351A4B0010A3AC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D4127351A4B0010A3AC /* SignUpView.swift */; };
 		CA305D4427351D490010A3AC /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D4327351D490010A3AC /* SignUpViewModel.swift */; };
+		CA305D472735214C0010A3AC /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D462735214C0010A3AC /* TabbarView.swift */; };
+		CA305D49273521600010A3AC /* TabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D48273521600010A3AC /* TabbarViewModel.swift */; };
+		CA305D4C273523CF0010A3AC /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D4B273523CF0010A3AC /* DictionaryView.swift */; };
+		CA305D4E273523DE0010A3AC /* DictionaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D4D273523DE0010A3AC /* DictionaryViewModel.swift */; };
+		CA305D50273524610010A3AC /* View+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D4F273524610010A3AC /* View+Rounded.swift */; };
+		CA305D52273524B50010A3AC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D51273524B50010A3AC /* NetworkService.swift */; };
+		CA305D55273526B70010A3AC /* DictionaryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D54273526B70010A3AC /* DictionaryResponse.swift */; };
+		CA305D582735335B0010A3AC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D572735335B0010A3AC /* VideoView.swift */; };
+		CA305D5A273535AD0010A3AC /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D59273535AD0010A3AC /* VideoViewModel.swift */; };
 		CAE18CAF2734EDE500C967CD /* WordsFactoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */; };
 		CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CB02734EDE500C967CD /* ContentView.swift */; };
 		CAE18CB32734EDE800C967CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18CB22734EDE800C967CD /* Assets.xcassets */; };
@@ -144,6 +153,15 @@
 		CA305D3D2735174B0010A3AC /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		CA305D4127351A4B0010A3AC /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CA305D4327351D490010A3AC /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		CA305D462735214C0010A3AC /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		CA305D48273521600010A3AC /* TabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewModel.swift; sourceTree = "<group>"; };
+		CA305D4B273523CF0010A3AC /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
+		CA305D4D273523DE0010A3AC /* DictionaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewModel.swift; sourceTree = "<group>"; };
+		CA305D4F273524610010A3AC /* View+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Rounded.swift"; sourceTree = "<group>"; };
+		CA305D51273524B50010A3AC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CA305D54273526B70010A3AC /* DictionaryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryResponse.swift; sourceTree = "<group>"; };
+		CA305D572735335B0010A3AC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		CA305D59273535AD0010A3AC /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
 		CAE18CAB2734EDE500C967CD /* WordsFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFactoryApp.swift; sourceTree = "<group>"; };
 		CAE18CB02734EDE500C967CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -265,6 +283,41 @@
 			path = "Sign UP";
 			sourceTree = "<group>";
 		};
+		CA305D452735213A0010A3AC /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				CA305D462735214C0010A3AC /* TabbarView.swift */,
+				CA305D48273521600010A3AC /* TabbarViewModel.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		CA305D4A273523A90010A3AC /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				CA305D4B273523CF0010A3AC /* DictionaryView.swift */,
+				CA305D4D273523DE0010A3AC /* DictionaryViewModel.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		CA305D53273526500010A3AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA305D54273526B70010A3AC /* DictionaryResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA305D56273533470010A3AC /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				CA305D572735335B0010A3AC /* VideoView.swift */,
+				CA305D59273535AD0010A3AC /* VideoViewModel.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		CAE18CA22734EDE500C967CD = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +350,10 @@
 		CAE18CAD2734EDE500C967CD /* WordsFactory */ = {
 			isa = PBXGroup;
 			children = (
+				CA305D56273533470010A3AC /* Video */,
+				CA305D53273526500010A3AC /* Models */,
+				CA305D4A273523A90010A3AC /* Dictionary */,
+				CA305D452735213A0010A3AC /* Tabbar */,
 				CA305D4027351A380010A3AC /* Sign UP */,
 				CA305D3A273517130010A3AC /* Onboarding */,
 				CAE18D2927350E4200C967CD /* WordsFactory.entitlements */,
@@ -403,6 +460,7 @@
 		CAE18D222734F43400C967CD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CA305D51273524B50010A3AC /* NetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -413,6 +471,7 @@
 				CAE18D242734F47100C967CD /* Color+Custom.swift */,
 				CAE18D262734F48100C967CD /* Font+Custom.swift */,
 				CAE18D302735150A00C967CD /* BannerShowingSingleton.swift */,
+				CA305D4F273524610010A3AC /* View+Rounded.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -908,14 +967,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA305D50273524610010A3AC /* View+Rounded.swift in Sources */,
+				CA305D4C273523CF0010A3AC /* DictionaryView.swift in Sources */,
+				CA305D49273521600010A3AC /* TabbarViewModel.swift in Sources */,
 				CAE18D252734F47100C967CD /* Color+Custom.swift in Sources */,
 				CAE18D272734F48100C967CD /* Font+Custom.swift in Sources */,
+				CA305D582735335B0010A3AC /* VideoView.swift in Sources */,
 				CAE18D312735150A00C967CD /* BannerShowingSingleton.swift in Sources */,
 				CA305D3C273517330010A3AC /* OnboardingView.swift in Sources */,
+				CA305D4E273523DE0010A3AC /* DictionaryViewModel.swift in Sources */,
+				CA305D55273526B70010A3AC /* DictionaryResponse.swift in Sources */,
+				CA305D5A273535AD0010A3AC /* VideoViewModel.swift in Sources */,
 				CA305D4427351D490010A3AC /* SignUpViewModel.swift in Sources */,
 				CA305D4227351A4B0010A3AC /* SignUpView.swift in Sources */,
+				CA305D52273524B50010A3AC /* NetworkService.swift in Sources */,
 				CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */,
 				CA305D3E2735174B0010A3AC /* OnboardingViewModel.swift in Sources */,
+				CA305D472735214C0010A3AC /* TabbarView.swift in Sources */,
 				CAE18CAF2734EDE500C967CD /* WordsFactoryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

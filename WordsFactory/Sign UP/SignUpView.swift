@@ -32,35 +32,42 @@ struct SignUpView: View {
           .padding(16)
           .font(.regular(14))
           .foregroundColor(.incGray)
-//          .overlay(
-//            RoundedRectangle(cornerRadius: 12)
-//              .foregroundColor(.incGray)
-//          )
-        TextField("Name", text: $viewModel.name)
+          .overlay(
+            RoundedRectangle(cornerRadius: 12)
+              .stroke(Color.incGray, lineWidth: 1)
+          )
+        TextField("E-mail", text: $viewModel.email)
           .padding(16)
           .font(.regular(14))
           .foregroundColor(.incGray)
-//          .overlay(
-//            RoundedRectangle(cornerRadius: 12)
-//              .foregroundColor(.incGray)
-//          )
+          .overlay(
+            RoundedRectangle(cornerRadius: 12)
+              .stroke(Color.incGray, lineWidth: 1)
+          )
         HStack {
-          TextField("Name", text: $viewModel.name)
-            .padding(16)
-            .font(.regular(14))
-            .foregroundColor(.incGray)
+          if viewModel.isPasswordSecret {
+            SecureField("Password", text: $viewModel.password)
+              .padding(16)
+              .font(.regular(14))
+              .foregroundColor(.incGray)
+          } else {
+            TextField("Password", text: $viewModel.password)
+              .padding(16)
+              .font(.regular(14))
+              .foregroundColor(.incGray)
+          }
           Button {
             viewModel.isPasswordSecret ? viewModel.showPassword() : viewModel.hidePassword()
           } label: {
             Image(viewModel.isPasswordSecret ? "show" : "hide")
               .resizable()
               .frame(width: 24, height: 24)
+              .padding(.trailing, 16)
           }
-        }
-//        .overlay(
-//          RoundedRectangle(cornerRadius: 12)
-//            .foregroundColor(.incGray)
-//        )
+        }.overlay(
+          RoundedRectangle(cornerRadius: 12)
+            .stroke(Color.incGray, lineWidth: 1)
+        )
       }.padding(.horizontal, 16)
       
       Button {
@@ -75,14 +82,13 @@ struct SignUpView: View {
           .background(Color.accent)
           .cornerRadius(16)
       }.padding(.horizontal, 32)
-        .padding(.bottom, 70)
         .frame(maxHeight: 56)
       
     }.navigationBarHidden(true)
       .background(
         NavigationLink(isActive: $viewModel.goToMain,
                        destination: {
-                         EmptyView()
+                         TabbarView()
                        }, label: {
                          EmptyView()
                        }).hidden()

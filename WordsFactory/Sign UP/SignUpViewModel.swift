@@ -8,9 +8,9 @@
 import SwiftUI
 
 class SignUpViewModel: ObservableObject {
-  @Published var name: String = ""
-  @Published var email: String = ""
-  @Published var password: String = ""
+  @Published var name: String = "test"
+  @Published var email: String = "test"
+  @Published var password: String = "test"
   @Published var isPasswordSecret: Bool = false
   @Published var goToMain: Bool = false
   

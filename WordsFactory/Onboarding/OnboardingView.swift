@@ -25,7 +25,7 @@ struct OnboardingView: View {
       
       Spacer()
       
-      TabView {
+      TabView(selection: $viewModel.currentPage) {
         ForEach(0..<viewModel.onboardingData.count) { index in
           VStack {
             Image("onb\(index + 1)")
@@ -45,7 +45,13 @@ struct OnboardingView: View {
         }
       }.tabViewStyle(.page)
       
-      Spacer()
+      HStack(spacing: 12) {
+        ForEach(0..<3) { index in
+          Capsule()
+            .frame(width: index == viewModel.currentPage ? 16 : 6, height: 6)
+            .foregroundColor(index == viewModel.currentPage ? Color.lightBlue : Color.incGray.opacity(0.5))
+        }
+      }.padding(.top, -70)
       
       Button {
         viewModel.makeAction()
