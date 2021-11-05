@@ -22,6 +22,7 @@ class DictionaryViewModel: ObservableObject {
   }
   
   private let networkService = NetworkService()
+  private let localStorageService = LocalStorageService()
   
   func search() {
     networkService.getMeaning(from: searchText) { words in
@@ -41,6 +42,7 @@ class DictionaryViewModel: ObservableObject {
   }
   
   func addToDictionary() {
-    UserDefaults.standard.set(searchText, forKey: "word")
+    guard let word = words.first else { return }
+    localStorageService.saveWord(word: word)
   }
 }

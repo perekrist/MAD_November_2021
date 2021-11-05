@@ -58,7 +58,7 @@ struct WidgetWordsFactoryEntryView : View {
           .frame(maxWidth: .infinity, alignment: .leading)
           .background( LinearGradient(colors: [.red, .yellow],
                                       startPoint: .leading, endPoint: .trailing))
-          .padding(.top, -5)
+          .padding(.top, -8)
         VStack(spacing: 16) {
           HStack {
             Text("My Dictionary")

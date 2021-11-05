@@ -41,6 +41,16 @@
 		CA305D6E2735674D0010A3AC /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D242734F47100C967CD /* Color+Custom.swift */; };
 		CA305D6F273567530010A3AC /* Font+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D262734F48100C967CD /* Font+Custom.swift */; };
 		CA305D70273567530010A3AC /* Font+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18D262734F48100C967CD /* Font+Custom.swift */; };
+		CA305D7127356DAE0010A3AC /* SecondState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D6027355A000010A3AC /* SecondState.swift */; };
+		CA305D7527356DFB0010A3AC /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D7427356DFB0010A3AC /* StartView.swift */; };
+		CA305D7727356E070010A3AC /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D7627356E070010A3AC /* StartViewModel.swift */; };
+		CA305D7A27356F4D0010A3AC /* TrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D7927356F4D0010A3AC /* TrainView.swift */; };
+		CA305D7C27356F980010A3AC /* TrainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D7B27356F980010A3AC /* TrainViewModel.swift */; };
+		CA305D7E2735700C0010A3AC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D7D2735700C0010A3AC /* Question.swift */; };
+		CA305D7F273570690010A3AC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D7D2735700C0010A3AC /* Question.swift */; };
+		CA305D81273571BA0010A3AC /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D80273571BA0010A3AC /* LocalStorageService.swift */; };
+		CA305D83273571CD0010A3AC /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D80273571BA0010A3AC /* LocalStorageService.swift */; };
+		CA305D84273572C60010A3AC /* DictionaryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D54273526B70010A3AC /* DictionaryResponse.swift */; };
 		CAE18CAF2734EDE500C967CD /* WordsFactoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */; };
 		CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CB02734EDE500C967CD /* ContentView.swift */; };
 		CAE18CB32734EDE800C967CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18CB22734EDE800C967CD /* Assets.xcassets */; };
@@ -182,6 +192,12 @@
 		CA305D6027355A000010A3AC /* SecondState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondState.swift; sourceTree = "<group>"; };
 		CA305D6327355A990010A3AC /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		CA305D6527355AAA0010A3AC /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		CA305D7427356DFB0010A3AC /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		CA305D7627356E070010A3AC /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
+		CA305D7927356F4D0010A3AC /* TrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainView.swift; sourceTree = "<group>"; };
+		CA305D7B27356F980010A3AC /* TrainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewModel.swift; sourceTree = "<group>"; };
+		CA305D7D2735700C0010A3AC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		CA305D80273571BA0010A3AC /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
 		CAE18CAB2734EDE500C967CD /* WordsFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFactoryApp.swift; sourceTree = "<group>"; };
 		CAE18CB02734EDE500C967CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -326,6 +342,7 @@
 			children = (
 				CA305D54273526B70010A3AC /* DictionaryResponse.swift */,
 				CA305D6027355A000010A3AC /* SecondState.swift */,
+				CA305D7D2735700C0010A3AC /* Question.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -355,6 +372,33 @@
 				CA305D6527355AAA0010A3AC /* QuestionViewModel.swift */,
 			);
 			path = Question;
+			sourceTree = "<group>";
+		};
+		CA305D7227356DDF0010A3AC /* common */ = {
+			isa = PBXGroup;
+			children = (
+				CAE18CEF2734EE8F00C967CD /* WordsFactoryApp.swift */,
+				CAE18CED2734EE8F00C967CD /* ContentView.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		CA305D7327356DEC0010A3AC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CA305D7427356DFB0010A3AC /* StartView.swift */,
+				CA305D7627356E070010A3AC /* StartViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CA305D7827356F400010A3AC /* Train */ = {
+			isa = PBXGroup;
+			children = (
+				CA305D7927356F4D0010A3AC /* TrainView.swift */,
+				CA305D7B27356F980010A3AC /* TrainViewModel.swift */,
+			);
+			path = Train;
 			sourceTree = "<group>";
 		};
 		CAE18CA22734EDE500C967CD = {
@@ -444,8 +488,9 @@
 		CAE18CEC2734EE8F00C967CD /* WatchWordsFactory WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CAE18CED2734EE8F00C967CD /* ContentView.swift */,
-				CAE18CEF2734EE8F00C967CD /* WordsFactoryApp.swift */,
+				CA305D7827356F400010A3AC /* Train */,
+				CA305D7327356DEC0010A3AC /* Main */,
+				CA305D7227356DDF0010A3AC /* common */,
 				CAE18CF12734EE8F00C967CD /* ComplicationController.swift */,
 				CAE18CF32734EE9100C967CD /* Assets.xcassets */,
 				CAE18CF82734EE9100C967CD /* Info.plist */,
@@ -502,6 +547,7 @@
 			isa = PBXGroup;
 			children = (
 				CA305D51273524B50010A3AC /* NetworkService.swift */,
+				CA305D80273571BA0010A3AC /* LocalStorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1022,6 +1068,7 @@
 				CAE18D272734F48100C967CD /* Font+Custom.swift in Sources */,
 				CA305D582735335B0010A3AC /* VideoView.swift in Sources */,
 				CAE18D312735150A00C967CD /* BannerShowingSingleton.swift in Sources */,
+				CA305D81273571BA0010A3AC /* LocalStorageService.swift in Sources */,
 				CA305D6127355A000010A3AC /* SecondState.swift in Sources */,
 				CA305D3C273517330010A3AC /* OnboardingView.swift in Sources */,
 				CA305D6627355AAA0010A3AC /* QuestionViewModel.swift in Sources */,
@@ -1031,6 +1078,7 @@
 				CA305D5A273535AD0010A3AC /* VideoViewModel.swift in Sources */,
 				CA305D4427351D490010A3AC /* SignUpViewModel.swift in Sources */,
 				CA305D4227351A4B0010A3AC /* SignUpView.swift in Sources */,
+				CA305D7E2735700C0010A3AC /* Question.swift in Sources */,
 				CA305D52273524B50010A3AC /* NetworkService.swift in Sources */,
 				CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */,
 				CA305D6427355A990010A3AC /* QuestionView.swift in Sources */,
@@ -1062,10 +1110,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAE18CF02734EE8F00C967CD /* WordsFactoryApp.swift in Sources */,
+				CA305D83273571CD0010A3AC /* LocalStorageService.swift in Sources */,
+				CA305D7A27356F4D0010A3AC /* TrainView.swift in Sources */,
+				CA305D7727356E070010A3AC /* StartViewModel.swift in Sources */,
 				CAE18CEE2734EE8F00C967CD /* ContentView.swift in Sources */,
+				CA305D84273572C60010A3AC /* DictionaryResponse.swift in Sources */,
 				CA305D6E2735674D0010A3AC /* Color+Custom.swift in Sources */,
+				CA305D7C27356F980010A3AC /* TrainViewModel.swift in Sources */,
 				CAE18CF22734EE8F00C967CD /* ComplicationController.swift in Sources */,
 				CA305D6F273567530010A3AC /* Font+Custom.swift in Sources */,
+				CA305D7127356DAE0010A3AC /* SecondState.swift in Sources */,
+				CA305D7F273570690010A3AC /* Question.swift in Sources */,
+				CA305D7527356DFB0010A3AC /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

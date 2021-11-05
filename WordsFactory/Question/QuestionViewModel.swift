@@ -7,13 +7,6 @@
 
 import SwiftUI
 
-struct Question {
-  let meaning: String
-  let answers: [String]
-  let correctAnswer: Int
-  var isCorrect: Bool = false
-}
-
 class QuestionViewModel: ObservableObject {
   @Published var questions: [Question] = []
   var correctAnswers: Int {
