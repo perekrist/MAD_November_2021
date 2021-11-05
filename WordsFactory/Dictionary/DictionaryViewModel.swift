@@ -32,11 +32,15 @@ class DictionaryViewModel: ObservableObject {
   func playPhonetic(with url: String) {
     guard let url = URL(string: "https:" + url) else { return }
     let item = AVPlayerItem(url: url)
-    let player = AVPlayer(playerItem: item)
-    player.play()
+    do {
+      let player = try AVPlayer(playerItem: item)
+      player.play()
+    } catch (let error) {
+      BannerShowingSingleton.shared.showErrorBanner(error.localizedDescription)
+    }
   }
   
   func addToDictionary() {
-    
+    UserDefaults.standard.set(searchText, forKey: "word")
   }
 }
