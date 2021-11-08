@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct DictionaryView: View {
-  @ObservedObject var viewModel = DictionaryViewModel()
+  @ObservedObject var viewModel: DictionaryViewModel
   var body: some View {
     
     ZStack(alignment: .bottom) {
       Color.white.edgesIgnoringSafeArea(.all)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-      VStack {
+      VStack(alignment: .leading) {
         HStack {
           TextField("", text: $viewModel.searchText)
             .padding(16)
@@ -52,8 +52,7 @@ struct DictionaryView: View {
             Spacer()
           }
         } else {
-          
-          ScrollView(.vertical) {
+          ScrollView(.vertical, showsIndicators: false) {
             ForEach(viewModel.words, id: \.id) { word in
               WordView(word: word, play: {
                 viewModel.playPhonetic(with: word.phonetics.first?.audio ?? "")
@@ -92,39 +91,47 @@ struct WordView: View {
         Text(word.word ?? "")
           .foregroundColor(.black)
           .font(.medium(14))
-        Text("[" + (word.phonetics.first?.text ?? "") + "]")
-          .foregroundColor(.accent)
-          .font(.regular(14))
-        Button {
-          play()
-        } label: {
-          Image("audio")
+        if let phonetic = word.phonetics.first?.text, !phonetic.isEmpty {
+          Text("[" + phonetic + "]")
+            .foregroundColor(.accent)
+            .font(.regular(14))
         }
+        if let url = word.phonetics.first?.audio, !url.isEmpty {
+          Button {
+            play()
+          } label: {
+            Image("audio")
+          }
+        }
+        Spacer()
       }
       HStack(spacing: 16) {
         Text("Part of Speech:")
-          .foregroundColor(.black)
           .font(.medium(20))
         Text(word.meanings.first?.partOfSpeech ?? "")
-          .foregroundColor(.accent)
           .font(.regular(14))
-      }
+      }.foregroundColor(.black)
+      
       VStack(alignment: .leading, spacing: 10) {
         ForEach(word.meanings, id: \.id) { meaning in
           ForEach(meaning.definitions, id: \.id) { definition in
             VStack(alignment: .leading, spacing: 8) {
               Text(definition.definition ?? "")
+                .frame(maxWidth: .infinity, alignment: .leading)
                 .multilineTextAlignment(.leading)
                 .foregroundColor(.black)
                 .font(.regular(14))
-              HStack(spacing: 0) {
-                Text("Example: ")
-                  .foregroundColor(.lightBlue)
-                  .font(.regular(14))
-                Text(definition.example ?? "")
-                  .foregroundColor(.black)
-                  .font(.regular(14))
-                  .multilineTextAlignment(.leading)
+              
+              if let example = definition.example {
+                HStack(spacing: 0) {
+                  Text("Example: ")
+                    .foregroundColor(.lightBlue)
+                    .font(.regular(14))
+                  Text(example)
+                    .foregroundColor(.black)
+                    .font(.regular(14))
+                    .multilineTextAlignment(.leading)
+                }
               }
             }.padding(16)
               .frame(maxWidth: .infinity)

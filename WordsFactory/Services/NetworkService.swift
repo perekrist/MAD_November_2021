@@ -8,8 +8,8 @@
 import Foundation
 import Alamofire
 
-extension NetworkService {
-  func getMeaning(from text: String, completion: @escaping (([Word]) -> Void)) {
+extension NetworkService: Searchable {
+  func search(with text: String, completion: @escaping (([Word]) -> Void)) {
     baseRequest(url: text, method: .get) { response in
       completion(response)
     }
@@ -18,6 +18,7 @@ extension NetworkService {
 
 class NetworkService {
   static let baseURL = "https://api.dictionaryapi.dev/api/v2/entries/en/"
+  
   func baseRequest<T: Decodable>(url: String, method: HTTPMethod, completion: @escaping ((T) -> Void)) {
     AF.request(NetworkService.baseURL + url, method: method).responseData { response in
       switch response.result {

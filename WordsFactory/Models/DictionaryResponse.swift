@@ -12,6 +12,7 @@ struct Word: Codable, Identifiable {
   let word: String?
   let meanings: [Meaning]
   let phonetics: [Phonetics]
+  var rate: Int? = 0
 }
 
 struct Meaning: Codable, Identifiable {

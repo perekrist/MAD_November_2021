@@ -10,17 +10,21 @@ import SwiftUI
 struct TabbarView: View {
   @ObservedObject private var viewModel = TabbarViewModel()
   
+  @ObservedObject private var dictionaryViewModel = DictionaryViewModel()
+  @ObservedObject private var trainingViewModel = TrainingViewModel()
+  @ObservedObject private var videoViewModel = VideoViewModel()
+  
   var body: some View {
     ZStack(alignment: .bottom) {
       Color.white.edgesIgnoringSafeArea(.all)
       VStack {
         switch viewModel.currentTab {
         case .dictionary:
-          DictionaryView()
+          DictionaryView(viewModel: dictionaryViewModel)
         case .training:
-          TrainingView()
+          TrainingView(viewModel: trainingViewModel)
         case .video:
-          VideoView()
+          VideoView(viewModel: videoViewModel)
         }
       }.padding(.bottom, 100)
       HStack(spacing: 65) {

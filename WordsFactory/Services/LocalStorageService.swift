@@ -7,7 +7,12 @@
 
 import Foundation
 
-class LocalStorageService {
+class LocalStorageService: Searchable {
+  func search(with text: String, completion: @escaping (([Word]) -> Void)) {
+    let words = getWords()
+    completion(words.filter { $0.word?.contains(text.lowercased()) == true })
+  }
+  
   func getWords() -> [Word] {
     guard let data = UserDefaults(suiteName: "group.com.words-factory")?.data(forKey: "words") else { return [] }
     let decoder = JSONDecoder()
@@ -23,6 +28,11 @@ class LocalStorageService {
     let encoder = JSONEncoder()
     let encodedData = try? encoder.encode(words)
     UserDefaults(suiteName: "group.com.words-factory")?.set(encodedData, forKey: "words")
+  }
+  
+  func update() {
+    let words = getWords()
     UserDefaults(suiteName: "group.com.words-factory")?.set(words.count, forKey: "total")
+    UserDefaults(suiteName: "group.com.words-factory")?.set(words.filter { ($0.rate ?? 0) >= 5 }.count, forKey: "learned")
   }
 }

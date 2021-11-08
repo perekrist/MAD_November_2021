@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 
 struct VideoView: UIViewRepresentable {
-  @ObservedObject private var viewModel = VideoViewModel()
+  @ObservedObject var viewModel: VideoViewModel
   
   func makeUIView(context: Context) -> WKWebView {
     let webView = WKWebView()

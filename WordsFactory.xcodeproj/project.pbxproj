@@ -53,6 +53,8 @@
 		CA305D84273572C60010A3AC /* DictionaryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D54273526B70010A3AC /* DictionaryResponse.swift */; };
 		CA305D8B27357B5D0010A3AC /* TestsFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D8A27357B5D0010A3AC /* TestsFacade.swift */; };
 		CA305D8C27357C110010A3AC /* TestsFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA305D8A27357B5D0010A3AC /* TestsFacade.swift */; };
+		CA85E44B2738E8ED00068057 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85E44A2738E8ED00068057 /* NetworkManager.swift */; };
+		CA85E44D2738F09D00068057 /* Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85E44C2738F09D00068057 /* Searchable.swift */; };
 		CAE18CAF2734EDE500C967CD /* WordsFactoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */; };
 		CAE18CB12734EDE500C967CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE18CB02734EDE500C967CD /* ContentView.swift */; };
 		CAE18CB32734EDE800C967CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE18CB22734EDE800C967CD /* Assets.xcassets */; };
@@ -201,6 +203,8 @@
 		CA305D7D2735700C0010A3AC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CA305D80273571BA0010A3AC /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
 		CA305D8A27357B5D0010A3AC /* TestsFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsFacade.swift; sourceTree = "<group>"; };
+		CA85E44A2738E8ED00068057 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CA85E44C2738F09D00068057 /* Searchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searchable.swift; sourceTree = "<group>"; };
 		CAE18CAB2734EDE500C967CD /* WordsFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFactoryApp.swift; sourceTree = "<group>"; };
 		CAE18CB02734EDE500C967CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -542,6 +546,7 @@
 				CAE18CB02734EDE500C967CD /* ContentView.swift */,
 				CAE18CAE2734EDE500C967CD /* WordsFactoryApp.swift */,
 				CAE18D1F2734F31400C967CD /* Launch Screen.storyboard */,
+				CA85E44C2738F09D00068057 /* Searchable.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -552,6 +557,7 @@
 				CA305D51273524B50010A3AC /* NetworkService.swift */,
 				CA305D80273571BA0010A3AC /* LocalStorageService.swift */,
 				CA305D8A27357B5D0010A3AC /* TestsFacade.swift */,
+				CA85E44A2738E8ED00068057 /* NetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1069,6 +1075,7 @@
 				CA305D4C273523CF0010A3AC /* DictionaryView.swift in Sources */,
 				CA305D8B27357B5D0010A3AC /* TestsFacade.swift in Sources */,
 				CA305D49273521600010A3AC /* TabbarViewModel.swift in Sources */,
+				CA85E44D2738F09D00068057 /* Searchable.swift in Sources */,
 				CAE18D252734F47100C967CD /* Color+Custom.swift in Sources */,
 				CAE18D272734F48100C967CD /* Font+Custom.swift in Sources */,
 				CA305D582735335B0010A3AC /* VideoView.swift in Sources */,
@@ -1078,6 +1085,7 @@
 				CA305D3C273517330010A3AC /* OnboardingView.swift in Sources */,
 				CA305D6627355AAA0010A3AC /* QuestionViewModel.swift in Sources */,
 				CA305D5D273554FA0010A3AC /* TrainingView.swift in Sources */,
+				CA85E44B2738E8ED00068057 /* NetworkManager.swift in Sources */,
 				CA305D4E273523DE0010A3AC /* DictionaryViewModel.swift in Sources */,
 				CA305D55273526B70010A3AC /* DictionaryResponse.swift in Sources */,
 				CA305D5A273535AD0010A3AC /* VideoViewModel.swift in Sources */,

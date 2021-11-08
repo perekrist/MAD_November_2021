@@ -9,7 +9,7 @@ import SwiftUI
 import AVKit
 
 class DictionaryViewModel: ObservableObject {
-  @Published var searchText: String = "rude" {
+  @Published var searchText: String = "" {
     didSet {
       showEmptyPlaceholder = searchText.isEmpty || words.isEmpty
     }
@@ -21,11 +21,12 @@ class DictionaryViewModel: ObservableObject {
     }
   }
   
-  private let networkService = NetworkService()
+  private var player: AVPlayer?
   private let localStorageService = LocalStorageService()
+  @ObservedObject private var networkManager = NetworkManager()
   
   func search() {
-    networkService.getMeaning(from: searchText) { words in
+    networkManager.search(with: searchText) { words in
       self.words = words
     }
   }
@@ -33,12 +34,8 @@ class DictionaryViewModel: ObservableObject {
   func playPhonetic(with url: String) {
     guard let url = URL(string: "https:" + url) else { return }
     let item = AVPlayerItem(url: url)
-    do {
-      let player = try AVPlayer(playerItem: item)
-      player.play()
-    } catch (let error) {
-      BannerShowingSingleton.shared.showErrorBanner(error.localizedDescription)
-    }
+    player = AVPlayer(playerItem: item)
+    player?.play()
   }
   
   func addToDictionary() {

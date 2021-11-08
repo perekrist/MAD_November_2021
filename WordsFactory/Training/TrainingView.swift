@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TrainingView: View {
-  @ObservedObject private var viewModel = TrainingViewModel()
+  @ObservedObject var viewModel: TrainingViewModel
   private let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
   
   var body: some View {
